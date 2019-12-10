@@ -17,7 +17,9 @@ SONAR_ORGANIZATION=$(echo $SECRETS | jq -r '.data.SONAR_ORGANIZATION')
 
 echo "Building $BRANCH branch"
 
-apt-get install automake
+apt-get install git autoconf automake libtool texinfo gperf git2cl
+apt-get install libunistring-dev gtk-doc-tools valgrind gengetopt
+apt-get install abi-compliance-checker ruby-ronn
 
 if [ "$BRANCH" = "develop" ]; then
   openssl version -a
