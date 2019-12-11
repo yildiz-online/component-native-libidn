@@ -21,6 +21,11 @@ apt-get install git autoconf automake libtool texinfo gperf git2cl
 apt-get install libunistring-dev gtk-doc-tools valgrind gengetopt
 apt-get install abi-compliance-checker ruby-ronn
 
+touch /src/src/main/c++/aclocal.m4
+touch /src/src/main/c++/configure
+touch /src/src/main/c++/Makefile.am
+touch /src/src/main/c++/Makefile.in
+
 if [ "$BRANCH" = "develop" ]; then
   openssl version -a
   openssl aes-256-cbc -pass pass:$OPENSSL_PWD -in ../build-resources/private-key.gpg.enc -out private-key.gpg -d && gpg --import --batch private-key.gpg && mvn -V -s ../build-resources/settings.xml clean deploy
