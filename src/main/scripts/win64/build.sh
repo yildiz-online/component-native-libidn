@@ -3,7 +3,7 @@
 #export $ LDFLAGS="-L/src/src/main/scripts/win64/libiconv/lib" CFLAGS="-I/src/src/main/scripts/win64/libiconv/include"
 
 echo "Retrieving sources..."
-cd ../../..
+cd ../..
 
 echo "Removing source"
 
