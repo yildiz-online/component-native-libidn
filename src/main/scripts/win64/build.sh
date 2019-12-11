@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 sed -i 's#/src/target/classes/win64/lib#/src/src/main/scripts/win64/libiconv/win64/lib#g' /src/src/main/scripts/win64/libiconv/win64/lib/libiconv.la
-
-export $ LDFLAGS="-L/src/src/main/scripts/win64/libiconv/win64/lib" CFLAGS="-I/src/src/main/scripts/win64/libiconv/win64/include"
+sed -i 's#/src/target/classes/win64/lib#/src/src/main/scripts/win64/libunistring/win64/lib#g' /src/src/main/scripts/win64/libunistring/win64/lib/libunistring.la
+export $ LDFLAGS="-L/src/src/main/scripts/win64/libiconv/win64/lib -L/src/src/main/scripts/win64/libunistring/win64/lib" CFLAGS="-I/src/src/main/scripts/win64/libiconv/win64/include -I/src/src/main/scripts/win64/libunistring/win64/include"
 
 cd ../..
 
