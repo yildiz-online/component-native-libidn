@@ -11,7 +11,7 @@ rm -r c++
 
 echo "Curl"
 
-curl https://ftp.gnu.org/gnu/libidn/libidn2-2.3.0.tar.gz - o libidn2-2.3.0.tar.gz
+curl https://ftp.gnu.org/gnu/libidn/libidn2-2.3.0.tar.gz -o libidn2-2.3.0.tar.gz
 
 echo "untar"
 
