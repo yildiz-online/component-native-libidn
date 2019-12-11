@@ -18,7 +18,7 @@ make
 
 make install
 
-cd /src/src/main/scripts/win64/
+cd /src/src/main/scripts/win64/libiconv
 ls -l
 
 r1=$?
