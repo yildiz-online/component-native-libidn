@@ -21,10 +21,10 @@ apt-get install git autoconf automake libtool texinfo gperf git2cl
 apt-get install libunistring-dev gtk-doc-tools valgrind gengetopt
 apt-get install abi-compliance-checker ruby-ronn
 
-touch /src/src/main/c++/aclocal.m4
-touch /src/src/main/c++/configure
-touch /src/src/main/c++/Makefile.am
-touch /src/src/main/c++/Makefile.in
+rm -r /src/src/main/c++
+curl https://ftp.gnu.org/gnu/libidn/libidn2-2.3.0.tar.lz -o libidn2.tar.gz
+tar xvzf file.tar.gz libidn2.tar.gz
+mv libidn2 /src/src/main/c++
 
 if [ "$BRANCH" = "develop" ]; then
   openssl version -a
