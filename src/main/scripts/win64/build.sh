@@ -8,7 +8,7 @@ rm -r c++
 
 curl https://ftp.gnu.org/gnu/libidn/libidn2-2.3.0.tar.gz -o libidn2-2.3.0.tar.gz
 
-tar xvzf libidn2-2.3.0.tar.gz
+tar xzf libidn2-2.3.0.tar.gz
 mv libidn2-2.3.0 c++
 rm libidn2-2.3.0.tar.gz
 
@@ -17,6 +17,9 @@ cd c++
 make
 
 make install
+
+cd /src/src/main/scripts/win64/libiconv/include
+ls -l
 
 r1=$?
 
