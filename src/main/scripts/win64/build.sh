@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export $ LDFLAGS="-L/src/src/main/scripts/win64/libiconv/lib" CFLAGS="-I/src/src/main/scripts/win64/libiconv/include"
+export $ LDFLAGS="-L/src/src/main/scripts/win64/libiconv/win64/lib" CFLAGS="-I/src/src/main/scripts/win64/libiconv/win64/include"
 
 cd ../..
 
@@ -17,9 +17,6 @@ cd c++
 make
 
 make install
-
-cd /src/src/main/scripts/win64/libiconv
-ls -l
 
 r1=$?
 
