@@ -6,8 +6,6 @@ export $ LDFLAGS="-L/src/src/main/scripts/win64/libiconv/win64/lib -L/src/src/ma
 
 cd ../..
 
-rm -r c++
-
 curl https://ftp.gnu.org/gnu/libidn/libidn2-2.3.0.tar.gz -o libidn2-2.3.0.tar.gz
 
 tar xzf libidn2-2.3.0.tar.gz
