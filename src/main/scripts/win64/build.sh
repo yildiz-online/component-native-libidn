@@ -22,7 +22,10 @@ r1=$?
 
 mkdir -p /src/target/classes/win64/lib
 mkdir -p /src/target/classes/win64/include
-cd /src/target/classes/win64/lib
+cp /usr/local/lib/libidn2.a /src/target/classes/win64/lib/libidn2.a
+cp /usr/local/lib/libidn2.dll.a /src/target/classes/win64/lib/libidn2.dll.a
+cp /usr/local/bin/libidn2-0.dll /src/target/classes/win64/lib/libidn2-0.dll
+cd /usr/local/include
 ls -l
 
 exit ${r1}
