@@ -19,7 +19,6 @@ before_install:
   - docker pull moussavdb/build-java-native
 
 script:
-  - chmod 777 -R $PWD/src/main/c++/
   - chmod 777 deploy-maven-central.sh
   - chmod 777 $PWD/src/main/scripts/linux64/build.sh
   - chmod 777 $PWD/src/main/scripts/win64/build.sh
