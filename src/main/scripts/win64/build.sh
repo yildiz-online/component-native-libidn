@@ -25,4 +25,4 @@ mkdir -p /src/target/classes/win64/include
 cp -r /usr/local/lib /src/target/classes/win64/
 cp -r /usr/local/include /src/target/classes/win64/
 
-exit 0
+exit ${r1}
